@@ -258,7 +258,7 @@ def main():
 
     cfg = load_config()
 
-    banner = figlet_format("LLM OWASP LABS")
+    banner = figlet_format("SECTOR-21 LLM-LABS")
     console.print(f"[bold cyan]{banner}[/bold cyan]")
     console.print("[bold]Welcome to the LLM OWASP practice range.[/bold]\n")
 
