@@ -1,0 +1,319 @@
+LLM01:
+  name: "Prompt Injection"
+  description: "Labs about direct and indirect prompt injection attacks."
+  labs:
+    lab01_basic_direct:
+      title: "Basic Direct Prompt Injection"
+      description: "Simple chat endpoint with naive system prompt, vulnerable to direct injection."
+      default_port: 8001
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM01_Prompt_Injection/easy/Dockerfile"
+          compose_file: "labs/LLM01/lab01_basic_direct/docker-compose.yml"
+          flag_pool:
+            - "LLM01{EASY_ALPHA_PROMPT_INJECTION}"
+            - "LLM01{EASY_BRAVO_PROMPT_INJECTION}"
+            - "LLM01{EASY_CHARLIE_PROMPT_INJECTION}"
+        medium:
+          dockerfile: "dockerfiles/LLM01_Prompt_Injection/easy/Dockerfile"
+          compose_file: "labs/LLM01/lab01_basic_direct/docker-compose.yml"
+          flag_pool:
+            - "LLM01{MEDIUM_DELTA_PROMPT_INJECTION}"
+            - "LLM01{MEDIUM_ECHO_PROMPT_INJECTION}"
+            - "LLM01{MEDIUM_FOXTROT_PROMPT_INJECTION}"
+        hard:
+          dockerfile: "dockerfiles/LLM01_Prompt_Injection/easy/Dockerfile"
+          compose_file: "labs/LLM01/lab01_basic_direct/docker-compose.yml"
+          flag_pool:
+            - "LLM01{HARD_GOLF_PROMPT_INJECTION}"
+            - "LLM01{HARD_HOTEL_PROMPT_INJECTION}"
+            - "LLM01{HARD_INDIA_PROMPT_INJECTION}"
+
+LLM02:
+  name: "Insecure Output Handling"
+  description: "Labs where LLM output is rendered/used unsafely, leading to XSS or code execution."
+  labs:
+    lab01_insecure_output:
+      title: "Basic XSS via LLM Output"
+      description: "The LLM can be tricked into generating HTML/JS that is rendered unsafely."
+      default_port: 8002
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM02_Insecure_Output_Handling/easy/Dockerfile"
+          compose_file: "labs/LLM02/lab01_insecure_output/docker-compose.yml"
+          flag_pool:
+            - "LLM02{EASY_ALPHA_INSECURE_OUTPUT}"
+            - "LLM02{EASY_BRAVO_INSECURE_OUTPUT}"
+            - "LLM02{EASY_CHARLIE_INSECURE_OUTPUT}"
+        medium:
+          dockerfile: "dockerfiles/LLM02_Insecure_Output_Handling/easy/Dockerfile"
+          compose_file: "labs/LLM02/lab01_insecure_output/docker-compose.yml"
+          flag_pool:
+            - "LLM02{MEDIUM_DELTA_INSECURE_OUTPUT}"
+            - "LLM02{MEDIUM_ECHO_INSECURE_OUTPUT}"
+            - "LLM02{MEDIUM_FOXTROT_INSECURE_OUTPUT}"
+        hard:
+          dockerfile: "dockerfiles/LLM02_Insecure_Output_Handling/easy/Dockerfile"
+          compose_file: "labs/LLM02/lab01_insecure_output/docker-compose.yml"
+          flag_pool:
+            - "LLM02{HARD_GOLF_INSECURE_OUTPUT}"
+            - "LLM02{HARD_HOTEL_INSECURE_OUTPUT}"
+            - "LLM02{HARD_INDIA_INSECURE_OUTPUT}"
+
+LLM03:
+  name: "Training Data Poisoning"
+  description: "Labs where poisoned training / knowledge data causes the model to leak a secret flag when triggered."
+  labs:
+    lab01_poisoned_kb:
+      title: "Poisoned Knowledge Base"
+      description: "The model was trained on an untrusted knowledge base that includes hidden attacker-controlled instructions."
+      default_port: 8003
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM03_Training_Data_Poisoning/easy/Dockerfile"
+          compose_file: "labs/LLM03/lab01_poisoned_kb/docker-compose.yml"
+          flag_pool:
+            - "LLM03{EASY_ALPHA_TRAINING_POISON}"
+            - "LLM03{EASY_BRAVO_TRAINING_POISON}"
+            - "LLM03{EASY_CHARLIE_TRAINING_POISON}"
+        medium:
+          dockerfile: "dockerfiles/LLM03_Training_Data_Poisoning/easy/Dockerfile"
+          compose_file: "labs/LLM03/lab01_poisoned_kb/docker-compose.yml"
+          flag_pool:
+            - "LLM03{MEDIUM_DELTA_TRAINING_POISON}"
+            - "LLM03{MEDIUM_ECHO_TRAINING_POISON}"
+            - "LLM03{MEDIUM_FOXTROT_TRAINING_POISON}"
+        hard:
+          dockerfile: "dockerfiles/LLM03_Training_Data_Poisoning/easy/Dockerfile"
+          compose_file: "labs/LLM03/lab01_poisoned_kb/docker-compose.yml"
+          flag_pool:
+            - "LLM03{HARD_GOLF_TRAINING_POISON}"
+            - "LLM03{HARD_HOTEL_TRAINING_POISON}"
+            - "LLM03{HARD_INDIA_TRAINING_POISON}"
+
+LLM04:
+  name: "Model Denial-of-Service"
+  description: "Labs where crafted prompts cause the LLM to waste resources, hang, or generate huge outputs."
+  labs:
+    lab01_resource_exhaustion:
+      title: "Prompt-based Resource Exhaustion"
+      description: "The model can be coerced into entering expensive 'modes' that simulate resource exhaustion."
+      default_port: 8004
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM04_Model_Denial_of_Service/easy/Dockerfile"
+          compose_file: "labs/LLM04/lab01_resource_exhaustion/docker-compose.yml"
+          flag_pool:
+            - "LLM04{EASY_ALPHA_DOS}"
+            - "LLM04{EASY_BRAVO_DOS}"
+            - "LLM04{EASY_CHARLIE_DOS}"
+        medium:
+          dockerfile: "dockerfiles/LLM04_Model_Denial_of_Service/easy/Dockerfile"
+          compose_file: "labs/LLM04/lab01_resource_exhaustion/docker-compose.yml"
+          flag_pool:
+            - "LLM04{MEDIUM_DELTA_DOS}"
+            - "LLM04{MEDIUM_ECHO_DOS}"
+            - "LLM04{MEDIUM_FOXTROT_DOS}"
+        hard:
+          dockerfile: "dockerfiles/LLM04_Model_Denial_of_Service/easy/Dockerfile"
+          compose_file: "labs/LLM04/lab01_resource_exhaustion/docker-compose.yml"
+          flag_pool:
+            - "LLM04{HARD_GOLF_DOS}"
+            - "LLM04{HARD_HOTEL_DOS}"
+            - "LLM04{HARD_INDIA_DOS}"
+
+LLM05:
+  name: "Supply Chain Vulnerabilities"
+  description: "Labs where compromised third-party components, templates, or plugins introduce backdoor behavior."
+  labs:
+    lab01_supply_chain_template:
+      title: "Backdoored Template Pack"
+      description: "The model relies on a third-party template pack that contains hidden backdoor instructions."
+      default_port: 8005
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM05_Supply_Chain/easy/Dockerfile"
+          compose_file: "labs/LLM05/lab01_supply_chain_template/docker-compose.yml"
+          flag_pool:
+            - "LLM05{EASY_ALPHA_SUPPLY_CHAIN}"
+            - "LLM05{EASY_BRAVO_SUPPLY_CHAIN}"
+            - "LLM05{EASY_CHARLIE_SUPPLY_CHAIN}"
+        medium:
+          dockerfile: "dockerfiles/LLM05_Supply_Chain/easy/Dockerfile"
+          compose_file: "labs/LLM05/lab01_supply_chain_template/docker-compose.yml"
+          flag_pool:
+            - "LLM05{MEDIUM_DELTA_SUPPLY_CHAIN}"
+            - "LLM05{MEDIUM_ECHO_SUPPLY_CHAIN}"
+            - "LLM05{MEDIUM_FOXTROT_SUPPLY_CHAIN}"
+        hard:
+          dockerfile: "dockerfiles/LLM05_Supply_Chain/easy/Dockerfile"
+          compose_file: "labs/LLM05/lab01_supply_chain_template/docker-compose.yml"
+          flag_pool:
+            - "LLM05{HARD_GOLF_SUPPLY_CHAIN}"
+            - "LLM05{HARD_HOTEL_SUPPLY_CHAIN}"
+            - "LLM05{HARD_INDIA_SUPPLY_CHAIN}"
+
+LLM06:
+  name: "Sensitive Information Disclosure"
+  description: "Labs where the model leaks secrets, PII, or internal data when prompted in the wrong way."
+  labs:
+    lab01_sensitive_disclosure:
+      title: "Leaky Memory & Logs"
+      description: "The model is over-privileged and can be tricked into revealing sensitive internal records."
+      default_port: 8006
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM06_Sensitive_Info_Disclosure/easy/Dockerfile"
+          compose_file: "labs/LLM06/lab01_sensitive_disclosure/docker-compose.yml"
+          flag_pool:
+            - "LLM06{EASY_ALPHA_DISCLOSURE}"
+            - "LLM06{EASY_BRAVO_DISCLOSURE}"
+            - "LLM06{EASY_CHARLIE_DISCLOSURE}"
+        medium:
+          dockerfile: "dockerfiles/LLM06_Sensitive_Info_Disclosure/easy/Dockerfile"
+          compose_file: "labs/LLM06/lab01_sensitive_disclosure/docker-compose.yml"
+          flag_pool:
+            - "LLM06{MEDIUM_DELTA_DISCLOSURE}"
+            - "LLM06{MEDIUM_ECHO_DISCLOSURE}"
+            - "LLM06{MEDIUM_FOXTROT_DISCLOSURE}"
+        hard:
+          dockerfile: "dockerfiles/LLM06_Sensitive_Info_Disclosure/easy/Dockerfile"
+          compose_file: "labs/LLM06/lab01_sensitive_disclosure/docker-compose.yml"
+          flag_pool:
+            - "LLM06{HARD_GOLF_DISCLOSURE}"
+            - "LLM06{HARD_HOTEL_DISCLOSURE}"
+            - "LLM06{HARD_INDIA_DISCLOSURE}"
+
+LLM07:
+  name: "Insecure Plugin Design"
+  description: "Labs where insecure tool / plugin integrations let the model perform dangerous actions or leak secrets."
+  labs:
+    lab01_insecure_plugin:
+      title: "Backdoored Tool-Using Agent"
+      description: "The assistant can call internal plugins. Some plugin manifests contain dangerous backdoor behavior."
+      default_port: 8007
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM07_Insecure_Plugin/easy/Dockerfile"
+          compose_file: "labs/LLM07/lab01_insecure_plugin/docker-compose.yml"
+          flag_pool:
+            - "LLM07{EASY_ALPHA_PLUGIN}"
+            - "LLM07{EASY_BRAVO_PLUGIN}"
+            - "LLM07{EASY_CHARLIE_PLUGIN}"
+        medium:
+          dockerfile: "dockerfiles/LLM07_Insecure_Plugin/easy/Dockerfile"
+          compose_file: "labs/LLM07/lab01_insecure_plugin/docker-compose.yml"
+          flag_pool:
+            - "LLM07{MEDIUM_DELTA_PLUGIN}"
+            - "LLM07{MEDIUM_ECHO_PLUGIN}"
+            - "LLM07{MEDIUM_FOXTROT_PLUGIN}"
+        hard:
+          dockerfile: "dockerfiles/LLM07_Insecure_Plugin/easy/Dockerfile"
+          compose_file: "labs/LLM07/lab01_insecure_plugin/docker-compose.yml"
+          flag_pool:
+            - "LLM07{HARD_GOLF_PLUGIN}"
+            - "LLM07{HARD_HOTEL_PLUGIN}"
+            - "LLM07{HARD_INDIA_PLUGIN}"
+
+LLM08:
+  name: "Excessive Agency"
+  description: "Labs where the LLM agent is granted overly broad powers to act on behalf of the user or system."
+  labs:
+    lab01_excessive_agency:
+      title: "Over-Privileged System Agent"
+      description: "The agent can execute 'actions' like shell commands, file edits, and HTTP calls with weak constraints."
+      default_port: 8008
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM08_Excessive_Agency/easy/Dockerfile"
+          compose_file: "labs/LLM08/lab01_excessive_agency/docker-compose.yml"
+          flag_pool:
+            - "LLM08{EASY_ALPHA_AGENCY}"
+            - "LLM08{EASY_BRAVO_AGENCY}"
+            - "LLM08{EASY_CHARLIE_AGENCY}"
+        medium:
+          dockerfile: "dockerfiles/LLM08_Excessive_Agency/easy/Dockerfile"
+          compose_file: "labs/LLM08/lab01_excessive_agency/docker-compose.yml"
+          flag_pool:
+            - "LLM08{MEDIUM_DELTA_AGENCY}"
+            - "LLM08{MEDIUM_ECHO_AGENCY}"
+            - "LLM08{MEDIUM_FOXTROT_AGENCY}"
+        hard:
+          dockerfile: "dockerfiles/LLM08_Excessive_Agency/easy/Dockerfile"
+          compose_file: "labs/LLM08/lab01_excessive_agency/docker-compose.yml"
+          flag_pool:
+            - "LLM08{HARD_GOLF_AGENCY}"
+            - "LLM08{HARD_HOTEL_AGENCY}"
+            - "LLM08{HARD_INDIA_AGENCY}"
+
+LLM09:
+  name: "Overreliance on LLMs"
+  description: "Labs where systems or users rely too much on LLM outputs for critical decisions without verification."
+  labs:
+    lab01_overreliance_decision:
+      title: "Blind Risk & Approval Engine"
+      description: "The system treats the model's recommendations as ground truth for high-risk approvals."
+      default_port: 8009
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM09_Overreliance/easy/Dockerfile"
+          compose_file: "labs/LLM09/lab01_overreliance_decision/docker-compose.yml"
+          flag_pool:
+            - "LLM09{EASY_ALPHA_OVERRELIANCE}"
+            - "LLM09{EASY_BRAVO_OVERRELIANCE}"
+            - "LLM09{EASY_CHARLIE_OVERRELIANCE}"
+        medium:
+          dockerfile: "dockerfiles/LLM09_Overreliance/easy/Dockerfile"
+          compose_file: "labs/LLM09/lab01_overreliance_decision/docker-compose.yml"
+          flag_pool:
+            - "LLM09{MEDIUM_DELTA_OVERRELIANCE}"
+            - "LLM09{MEDIUM_ECHO_OVERRELIANCE}"
+            - "LLM09{MEDIUM_FOXTROT_OVERRELIANCE}"
+        hard:
+          dockerfile: "dockerfiles/LLM09_Overreliance/easy/Dockerfile"
+          compose_file: "labs/LLM09/lab01_overreliance_decision/docker-compose.yml"
+          flag_pool:
+            - "LLM09{HARD_GOLF_OVERRELIANCE}"
+            - "LLM09{HARD_HOTEL_OVERRELIANCE}"
+            - "LLM09{HARD_INDIA_OVERRELIANCE}"
+
+LLM10:
+  name: "Model Theft"
+  description: "Labs where attackers can exfiltrate proprietary model details, weights, or distilled replicas."
+  labs:
+    lab01_model_extraction:
+      title: "SentinelLM-as-a-Service Extraction"
+      description: "The API exposes dangerous debug and distillation paths that leak internal model details."
+      default_port: 8010
+      container_port: 8000
+      difficulty:
+        easy:
+          dockerfile: "dockerfiles/LLM10_Model_Theft/easy/Dockerfile"
+          compose_file: "labs/LLM10/lab01_model_extraction/docker-compose.yml"
+          flag_pool:
+            - "LLM10{EASY_ALPHA_MODEL_THEFT}"
+            - "LLM10{EASY_BRAVO_MODEL_THEFT}"
+            - "LLM10{EASY_CHARLIE_MODEL_THEFT}"
+        medium:
+          dockerfile: "dockerfiles/LLM10_Model_Theft/easy/Dockerfile"
+          compose_file: "labs/LLM10/lab01_model_extraction/docker-compose.yml"
+          flag_pool:
+            - "LLM10{MEDIUM_DELTA_MODEL_THEFT}"
+            - "LLM10{MEDIUM_ECHO_MODEL_THEFT}"
+            - "LLM10{MEDIUM_FOXTROT_MODEL_THEFT}"
+        hard:
+          dockerfile: "dockerfiles/LLM10_Model_Theft/easy/Dockerfile"
+          compose_file: "labs/LLM10/lab01_model_extraction/docker-compose.yml"
+          flag_pool:
+            - "LLM10{HARD_GOLF_MODEL_THEFT}"
+            - "LLM10{HARD_HOTEL_MODEL_THEFT}"
+            - "LLM10{HARD_INDIA_MODEL_THEFT}"

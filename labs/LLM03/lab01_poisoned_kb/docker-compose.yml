@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM03_Training_Data_Poisoning/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8003}:8000"
+    environment:
+      - LAB_ID=LLM03_lab01_poisoned_kb
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}

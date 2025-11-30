@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM09_Overreliance/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8009}:8000"
+    environment:
+      - LAB_ID=LLM09_lab01_overreliance_decision
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}

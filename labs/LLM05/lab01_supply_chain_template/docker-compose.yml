@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM05_Supply_Chain/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8005}:8000"
+    environment:
+      - LAB_ID=LLM05_lab01_supply_chain_template
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}
+

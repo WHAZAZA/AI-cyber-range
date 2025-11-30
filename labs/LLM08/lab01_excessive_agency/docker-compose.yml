@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM08_Excessive_Agency/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8008}:8000"
+    environment:
+      - LAB_ID=LLM08_lab01_excessive_agency
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}

@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ../../..    # project root
+      dockerfile: dockerfiles/LLM01_Prompt_Injection/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8001}:8000"
+    environment:
+      - LAB_ID=LLM01_lab01_basic_direct
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}

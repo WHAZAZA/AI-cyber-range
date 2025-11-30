@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM07_Insecure_Plugin/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8007}:8000"
+    environment:
+      - LAB_ID=LLM07_lab01_insecure_plugin
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}

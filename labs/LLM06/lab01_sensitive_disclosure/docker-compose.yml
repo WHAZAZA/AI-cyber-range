@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../../..
+      dockerfile: dockerfiles/LLM06_Sensitive_Info_Disclosure/easy/Dockerfile
+    ports:
+      - "${HOST_PORT:-8006}:8000"
+    environment:
+      - LAB_ID=LLM06_lab01_sensitive_disclosure
+      - DIFFICULTY=${DIFFICULTY:-easy}
+      - FLAG_SHA256=${FLAG_SHA256}
+      - FLAG_PLAIN=${FLAG_PLAIN}
